@@ -4,6 +4,7 @@ import com.Timewashers.Model.Machine;
 import com.Timewashers.Model.MachineStatus;
 import com.Timewashers.Repository.MachineRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.stream.Collectors;
 @Transactional
 public class LaundryService {
 
+    @Autowired
     private final MachineRepository machineRepository;
 
     public LaundryService(MachineRepository machineRepository) {
