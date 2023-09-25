@@ -3,17 +3,14 @@ package com.Timewashers.Model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 @Entity
-@Table(name = "machines")
+@Table(name = "laundromat")
 @Data
-public class Machine {
+public class Laundromat {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String type;
-
-    private boolean inUse;
-
-    private int remainingTime;
+    private Long laundromatId;
+    private String name;
 }
