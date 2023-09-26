@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface WasherRepository extends JpaRepository<Washer, Long> {
 
-    List<Washer> findByLaundromatId(Long laundromatId);
+    List<Washer> findByLaundromatId(Long washerId);
 
 }
